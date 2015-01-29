@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<!--Author: Tom Pickett-->
+<!--Program description: The main page for the slides of the game-->
+<!--Version 0.2 - Addded data values and added commints-->
+<!----------------------------------------------->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>A Trip to the Corner Store!</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Start of game-->
+    <div id="impress">
+        <div id="intro" class="step slide">
+            <div class="slide-text">
+                <p>You enter a store with hopes of buying some snacks.</p>
+                <p>In the store you see two big choices, a chocolate bar, or a bag of chips.</p>
+                <br />
+                <p>Which snack do you choose?</p>
+                <p><a href="#chips">Chips</a></p>
+                <p>or</p>
+                <p><a href="#chocolate">Chocolate</a></p>
+            </div>
+        </div>
+    </div>
+
+        <!--If you choose chips-->
+        <div id="chips" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You decide to checkout the chip isle.</p>
+                <p>You relize there are a couple options though, you could grab a random bag of chips
+                   and look for a drink aswell, or you could take your time looking for the perfect bag of chips.</p>
+                <br />
+                <p>Which option do you choose?</p>
+                <p><a href="#random">Random</a></p>
+                <p>or</p>
+                <p><a href="#search">Search</a></p>
+            </div> 
+        </div> 
+
+        <!--If you you choose random-->
+        <div id="random" class="step slide" data-x="3000">
+            <div class="slide-text">
+                <p>You decide to grab random chips and head over to the pop.</p>
+                <p>Do you want ot get Coke, or Pepsie</p>
+                <br />
+                <p>Which option do you choose?</p>
+                <p><a href="#coke">Coke</a></p>
+                <p>or</p>
+                <p><a href="#pepsie">Pepsie</a></p>
+            </div>
+        </div> 
+
+        <!--If your choose coke-->
+        <div id="coke" class="step slide" data-x="3000" data-y="1500">
+            <div class="slide-text">
+                <p>You grab a coke and look at the chips you got! you didnt relize you got those ones!!!! in a panic
+                  to return the crappy chips you drop the coke and it explodes everywhere! you get kicked out for making  a mess!</p>
+            </div>
+            <div class="menu">
+                <a href="#intro">START OVER</a>
+            </div>
+        </div>
+
+        <!--If you choose pepsie-->
+        <div id="pepsie" class="step slide" data-x="3000" data-y="-1500">
+            <div class="slide-text">
+                <p>You grab a pepsie and look at the chips you got! you didnt relize you got those ones!!!! in a panic
+                    to return the crappy chips you drop the coke and it explodes everywhere! you get kicked out for making a mess!</p>
+            </div>
+            <div class="menu">
+                <a href="#intro">START OVER</a>
+            </div>
+        </div>
+
+        <!--If you choose search-->
+        <div id="search" class="step slide" data-x="1500" data-y="-1500">
+            <div class="slide-text">
+                <p>You take your time and find the perfect bag of chips, while looking for chips you noticed 
+                a sign for a drink with your chips, on sale!</p>
+                <p>Do you grab a drink or not?</p>
+                <br />
+                <p>Which option do you choose?</p>
+                <p><a href="#yes">Ya</a></p>
+                <p>or</p>
+                <p><a href="#nah">Nah</a></p>
+            </div>
+        </div> 
+
+        <!--If you choose nah-->
+        <div id="nah" class="step slide" data-x="-1500" data-y="-1500">
+            <div class="slide-text">
+                <p>You leave the store without a drink and relize you got the saltiest chips! Your mouth is too dry to keep eating
+                    the chips so you put them away and they are eaten by a family member!</p>
+            </div>
+            <div class="menu">
+                <a href="#intro">START OVER</a>
+            </div>
+        </div>
+
+        <!--If you choose yes-->
+        <div id="yes" class="step slide" data-x="1500" data-y="-3000">
+            <div class="slide-text">
+                <p>You decide to grab a drink with your salty chips.</p>
+                <p>Do you grab a rootbeer, or cream soda</p>
+                <br />
+                <p>Which option do you choose?</p>
+                <p><a href="#beer">RootBeer</a></p>
+                <p>or</p>
+                <p><a href="#soda">CreamSoda</a></p>
+            </div>
+        </div> 
+
+        <!--If you choose soda-->
+        <div id="soda" class="step slide" data-x="3000" data-y="-3000">
+            <div class="slide-text">
+                <p>You decide to grab a creamsoda with your chips. On the way to the counter it
+                    falls and explodes! you get kicked out for making a mess....</p>
+            </div>
+            <div class="menu">
+                <a href="#intro">START OVER</a>
+            </div>
+        </div>
+
+        <!--If you chooose beer-->
+        <div id="beer" class="step slide" data-x="1500" data-y="-4500">
+            <div class="slide-text">
+                <p> YOU WIN!!!!!! </p>
+                <p>You get your chips and drink and head back home happy!</p>
+            </div>
+            <div class="menu">
+                <a href="#intro">START OVER</a>
+            </div>
+        </div>
+
+        <!--If you choose chocolate-->
+        <div id="chocolate" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>You decide to check out the chocolate isle.</p>
+                <p>You relize ther are a couple of choices though, you could go for thr first 
+                chocolate bar you see, or you could take your time and find the perfect chocolate bar. </p>
+                <br />
+                <p>Which option do you choose?</p>
+                <p><a href="#rush">Rush</a></p>
+                <p>or</p>
+                <p><a href="#time">Take your Time</a></p>
+            </div> 
+        </div>
+
+            <!--If you choose rush-->
+            <div id="rush" class="step slide" data-x="-3000">
+                <div class="slide-text">
+                    <p>You trip and fall through the choclate bars! the store
+                        clerk kicks you out for being drunk.</p>
+                </div>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+
+            <!--If you choose time-->
+            <div id="time" class="step slide" data-x="-1500" data-y="1500">
+                <div class="slide-text">
+                    <p>You decide to take your time finding a choclolate bar.</p>
+                    <p>You find the perfect chocolate bar to eat! But there is a child in the way!
+                    Do you push him aside, or wait patiently?</p>
+                    <br />
+                    <p>Which option do you choose?</p>
+                    <p><a href="#push">Push</a></p>
+                    <p>or</p>
+                    <p><a href="#wait">Wait</a></p>
+                </div>
+            </div>
+
+            <!--If you choose push-->
+            <div id="push" class="step slide" data-x="1500" data-y="1500">
+                <div class="slide-text">
+                    <p>You wait for the child to grab his chocolate bar, and he takes
+                        the last one you want! you leave the store with nothing!</p>
+                </div>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+
+            <!--If you choose wait -->
+            <div id="wait" class="step slide" data-x="-1500" data-y="3000">
+                <div class="slide-text">
+                    <p>You push the child out of the way and get the perfect 
+                    chocolate bar to eat! but then the mother comes over....</p>
+                    <p> You could tell her off and pay for your chocolate bar, or
+                     you can run from the store with your chocolate bar in hand</p>
+                    <br />
+                    <p>Which option do you choose?</p>
+                    <p><a href="#tell">Tell Her</a></p>
+                    <p>or</p>
+                    <p><a href="#run">Run</a></p>
+                </div>
+            </div>
+
+            <!--If you choose tell-->
+            <div id="tell" class="step slide" data-x="-3000" data-y="3000">
+                <div class="slide-text">
+                    <p>You tell off the mother and she phones the police and you get arrested for pushing
+                        the child, and you didnt get a chocolate bar!</p>
+                </div>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+
+            <!--If you choose run-->
+            <div id="run" class="step slide" data-x="1500" data-y="3000">
+                <div class="slide-text">
+                    <p>You run from the store with choclate bar in hand, as you get to the door the clerk
+                      blocks the entire escape! you turn over your chocolate bar and go to jail for pushing a child...</p>
+                </div>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        
+    <!-- JavaScript Section -->
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+
+</body>
+</html>
